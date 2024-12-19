@@ -1,15 +1,13 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Form from '../form.jsx';
-import { getI18N, } from "../../i18n/index"
 import Image from 'astro/components/Image.astro';
 import myImage from '/src/assets/img/profile-photo-cut.jpg'
 import chessImage from '/src/assets/img/chessclub-website.jpg'
 import loginImage from '/src/assets/img/login.jpg'
-
+import content from '../../i18n/content.json';
 
 const { currentLocale } = Astro
-const i18n = getI18N({ currentLocale })
 
 ---
 
@@ -22,9 +20,9 @@ const i18n = getI18N({ currentLocale })
 				<article class="md:flex-row-reverse md:justify-end md:gap-12">
 					<div class="flex flex-row justify-between sm:grid-cols-3">
 							<div class="col-span-2 flex flex-col justify-center gap-6 md:gap-8 my-auto">
-								<h1 class="text-5xl font-bold text-start dark:text-white">{i18n.intro.presentation}</h1> 
+								<h1 class="text-5xl font-bold text-start dark:text-white">{content.intro.presentation}</h1> 
 								<h2 class="w-auto sm:w-[85%] md:w-[90%] leading-6 dark:text-white">
-									<span class="text-blue-600 dark:text-orange-500">{i18n.intro.job}</span> {i18n.intro.intro}
+									<span class="text-blue-600 dark:text-orange-500">{content.intro.job}</span> {content.intro.intro}
 								</h2> 
 								<div class="flex flex-row gap-4">
 									<a aria-label="Link to Moises's Github" href="https://github.com/moiam" target="_blank" class="transition hover:scale-110">
@@ -40,7 +38,7 @@ const i18n = getI18N({ currentLocale })
 										</svg>
 										
 									</a>
-									<a aria-label="Open Moisés's Curriculum" href={i18n.resume} target="_blank"class="transition hover:scale-110">
+									<a aria-label="Open Moisés's Curriculum" href={content.resume} target="_blank"class="transition hover:scale-110">
 										<svg class="w-[48px] h-[48px] text-gray-800 hover:text-blue-600 " height="64px" width="64px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" 
 											xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" 
 											stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> 
@@ -63,7 +61,7 @@ const i18n = getI18N({ currentLocale })
 					<div class="flex flex-col">
 						<div class="flex items-center my-4">
 							<div class="flex-grow border-t border-gray-300"></div>
-							<span class="px-4 text-3xl text-gray-700 dark:text-white">{i18n.experience}</span>
+							<span class="px-4 text-3xl text-gray-700 dark:text-white">{content.experience}</span>
 							<div class="flex-grow border-t border-gray-300"></div>
 						</div>
 						
@@ -118,7 +116,7 @@ const i18n = getI18N({ currentLocale })
 								</header>
 								<footer class="h-28">
 									<p class=" text-wrap text-base ps-4 pb-2 pe-2">
-										{i18n.cards.chess_card}
+										{content.cards.chess_card}
 									</p>
 								</footer>
 								
@@ -156,7 +154,7 @@ const i18n = getI18N({ currentLocale })
 								</header>
 								<footer class="h-28">
 									<p class="text-wrap text-base ps-5 pe-2">
-										{i18n.cards.java_card}
+										{content.cards.java_card}
 									</p>
 								</footer>
 							</article>
@@ -167,7 +165,7 @@ const i18n = getI18N({ currentLocale })
 				<article>
 					<div class="flex items-center my-4">
 						<div class="flex-grow border-t border-gray-300"></div>
-						<span class="px-4 text-3xl text-gray-700 dark:text-white">{i18n.education}</span>
+						<span class="px-4 text-3xl text-gray-700 dark:text-white">{content.education}</span>
 						<div class="flex-grow border-t border-gray-300"></div>
 					</div>
 					<ol class="relative ms-8 border-s border-gray-200 dark:border-gray-700">                  
@@ -177,8 +175,8 @@ const i18n = getI18N({ currentLocale })
 									<svg class="w-4 h-4" width="64px" height="64px" viewBox="0 -8.14 62.451 62.451" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" 
 										stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Group_35" data-name="Group 35" transform="translate(-782.964 -1356.609)"> <path id="Path_92" data-name="Path 92" d="M798.022,1369.359v23.226h.034c.353,4.555,7.685,8.2,16.7,8.2s16.347-3.641,16.7-8.2h.033v-23.226Z" fill="#FFFFFF" stroke="#231f20" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></path> <path id="Path_93" data-name="Path 93" d="M843.415,1373.207l-29.225,14.6-29.227-14.6,29.227-14.6Z" fill="#ffffff" stroke="#231f20" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></path> <line id="Line_40" data-name="Line 40" y1="19.235" transform="translate(784.964 1374.361)" fill="#ffffff" stroke="#231f20" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></line> </g> </g></svg>
 								</span>
-								<h3 class="mb-1 text-xl font-semibold text-gray-900 dark:text-white">{i18n.education_items.student.title}</h3>
-								<time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-300">{i18n.education_items.student.time}</time>
+								<h3 class="mb-1 text-xl font-semibold text-gray-900 dark:text-white">{content.education_items.student.title}</h3>
+								<time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-300">{content.education_items.student.time}</time>
 								<p class="text-base font-normal text-gray-500 dark:text-gray-400"></p>
 						</li>
 						<li class="mb-10 ms-6">            
@@ -186,25 +184,25 @@ const i18n = getI18N({ currentLocale })
 								<svg class="w-4 h-4" width="64px" height="64px" viewBox="0 -8.14 62.451 62.451" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" 
 									stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Group_35" data-name="Group 35" transform="translate(-782.964 -1356.609)"> <path id="Path_92" data-name="Path 92" d="M798.022,1369.359v23.226h.034c.353,4.555,7.685,8.2,16.7,8.2s16.347-3.641,16.7-8.2h.033v-23.226Z" fill="#FFFFFF" stroke="#231f20" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></path> <path id="Path_93" data-name="Path 93" d="M843.415,1373.207l-29.225,14.6-29.227-14.6,29.227-14.6Z" fill="#ffffff" stroke="#231f20" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></path> <line id="Line_40" data-name="Line 40" y1="19.235" transform="translate(784.964 1374.361)" fill="#ffffff" stroke="#231f20" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></line> </g> </g></svg>
 							</span>
-							<h3 class="flex items-center mb-1 text-xl font-semibold text-gray-900 dark:text-white">{i18n.education_items.certificate.title}<span class="dark:bg-blue-100 dark:text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded bg-green-900 text-green-300 ms-3">Latest</span></h3>
-							<time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-300 ">{i18n.education_items.certificate.time}</time>
-							<p class="mb-4 text-base font-normal text-gray-800 dark:text-gray-100 ">{i18n.education_items.certificate.description}</p>
+							<h3 class="flex items-center mb-1 text-xl font-semibold text-gray-900 dark:text-white">{content.education_items.certificate.title}<span class="dark:bg-blue-100 dark:text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded bg-green-900 text-green-300 ms-3">Latest</span></h3>
+							<time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-300 ">{content.education_items.certificate.time}</time>
+							<p class="mb-4 text-base font-normal text-gray-800 dark:text-gray-100 ">{content.education_items.certificate.description}</p>
 							<a href="/CertificadoJava.pdf" target="_blank" class="inline-flex items-center px-4 py-2 text-sm font-medium
 							 dark:text-blue-900 dark:bg-white border dark:border-gray-200 rounded-lg dark:hover:bg-gray-300 dark:hover:text-blue-700
 							  focus:z-10 focus:ring-4 focus:outline-none dark:focus:ring-gray-200  bg-green-900 text-green-100 border-green-600
 								 hover:text-white hover:bg-green-700 focus:ring-green-700"><svg class="w-3.5 h-3.5 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
 							<path d="M14.707 7.793a1 1 0 0 0-1.414 0L11 10.086V1.5a1 1 0 0 0-2 0v8.586L6.707 7.793a1 1 0 1 0-1.414 1.414l4 4a1 1 0 0 0 1.416 0l4-4a1 1 0 0 0-.002-1.414Z"/>
 							<path d="M18 12h-2.55l-2.975 2.975a3.5 3.5 0 0 1-4.95 0L4.55 12H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm-3 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"/>
-							</svg> {i18n.education_items.certificate.button}</a>
+							</svg> {content.education_items.certificate.button}</a>
 						</li>
 						<li class="mb-10 ms-6">
 							<span class="absolute flex items-center justify-center w-6 h-6 dark:bg-blue-200 rounded-full -start-3 ring-8 dark:ring-blue-300 ring-green-900/50 bg-green-700">
 								<svg class="w-4 h-4" width="64px" height="64px" viewBox="0 -8.14 62.451 62.451" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" 
 									stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Group_35" data-name="Group 35" transform="translate(-782.964 -1356.609)"> <path id="Path_92" data-name="Path 92" d="M798.022,1369.359v23.226h.034c.353,4.555,7.685,8.2,16.7,8.2s16.347-3.641,16.7-8.2h.033v-23.226Z" fill="#FFFFFF" stroke="#231f20" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></path> <path id="Path_93" data-name="Path 93" d="M843.415,1373.207l-29.225,14.6-29.227-14.6,29.227-14.6Z" fill="#ffffff" stroke="#231f20" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></path> <line id="Line_40" data-name="Line 40" y1="19.235" transform="translate(784.964 1374.361)" fill="#ffffff" stroke="#231f20" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></line> </g> </g></svg>
 							</span>
-							<h3 class="mb-1 text-xl font-semibold text-gray-900 dark:text-white">{i18n.education_items.english.title}</h3>
-							<time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-300">{i18n.education_items.english.time}</time>
-							<p class="text-base font-normal text-gray-800 dark:text-gray-100 ">{i18n.education_items.english.description}</p>
+							<h3 class="mb-1 text-xl font-semibold text-gray-900 dark:text-white">{content.education_items.english.title}</h3>
+							<time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-300">{content.education_items.english.time}</time>
+							<p class="text-base font-normal text-gray-800 dark:text-gray-100 ">{content.education_items.english.description}</p>
 					</li>
 				</ol>
 					
@@ -212,7 +210,7 @@ const i18n = getI18N({ currentLocale })
 				<article>
 					<div class="flex items-center my-4">
 						<div class="flex-grow border-t border-gray-300"></div>
-						<span class="px-4 text-3xl text-gray-700 dark:text-white">{i18n.contact}</span>
+						<span class="px-4 text-3xl text-gray-700 dark:text-white">{content.contact}</span>
 						<div class="flex-grow border-t border-gray-300"></div>
 					</div>
 				</article>
