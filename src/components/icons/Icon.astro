@@ -1,0 +1,20 @@
+---
+const {name, caption, link} = Astro.props;
+const url = link ? link : "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/" + name.toLowerCase() + "/" + name.toLowerCase() + "-original.svg";
+---
+
+<style>
+    .icon {
+        text-align: center;
+        color: white;
+
+        width: 8vh;
+        display: inline-block;
+        margin: 18px;
+    }
+</style>
+
+<div class="icon">
+    <img src={url}>
+    <p>{caption ? caption : name}</p>
+</div>

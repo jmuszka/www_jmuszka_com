@@ -1,8 +1,8 @@
 {
     "intro": {
-        "presentation": "Hi, I'm Moisés",
-        "job": "Frontend Developer Junior",
-        "intro": " with 1 year of experience. Currently working as a freelancer, and in my spare time I compete in chess and play the guitar."
+        "presentation": "Hi, I'm Josh 👋",
+        "job": "Computer science student",
+        "intro": " and avant developer. [what i currently do]"
     },
     "experience": "Experience",
     "cards": {
@@ -12,24 +12,28 @@
     "education": "Education",
     "education_items": {
         "student": {
-            "title": "Bachelor's Degree in Physics",
-            "time": "Currently"
+            "title": "BSc. Computer Science",
+            "time": "September 2022 - April 2026",
+            "university": "University of Western Ontario",
+            "major": "Honour's Specialization in Computer Science + Minor in Software Engineering",
+            "courses": "Data Structures & Algorithms, Machine Learning, Artificial Intelligence, Object-Oriented Programming, Systems Programming, Operating Systems, Computer Architecture"
         },
         "certificate": {
-            "title": "JAVA OOP Certification",
-            "time": "September, 2023",
-            "description": "Creation of an application for order and client management with MySQL database.",
+            "title": "AWS Cloud Practitioner Certificate",
+            "time": "December 2024",
+            "provider": "Amazon Web Services (AWS).",
+            "description": "Certified understanding of AWS cloud tools and infrastructure, including EC2 server-hosting, networking, databases, and more.",
             "button": "View Certification"
-        },
-        "english": {
-            "title": "Advanced English Studies",
-            "time": "October, 2023",
-            "description": "Preparation for C1 English certification"
         }
+    },
+    "skills": "Skills",
+    "skill_items": {
+        
     },
     "contact": "Contact",
     "placeholder": {
-        "email": "joshmuszka67@gmail.com",
+        "email": "your@email.com",
+        "pretext": "Want to get in touch? Leave your email address and message below, and I'll get back to you as soon as I can.",
         "text": "Write your message here...",
         "button": {
             "send": "Send Message",
@@ -37,6 +41,6 @@
             "sent": "Message Sent!"
         }
     },
-    "resume": "/FrontendJuniorEn-cv.pdf"
+    "resume": "/resume.pdf"
   }
   

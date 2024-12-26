@@ -1,0 +1,20 @@
+---
+const {title} = Astro.props;
+---
+<div class="icon-row">
+    <p>{title}</p>
+    <slot/>    
+</div>
+
+<style>
+     .icon-row {
+        margin: 0 auto;
+        text-align: center;
+
+        color: white;
+     }
+
+     p {
+        font-weight: bold;
+     }
+</style>
