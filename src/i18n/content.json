@@ -41,6 +41,24 @@
             "sent": "Message Sent!"
         }
     },
-    "resume": "/resume.pdf"
+    "resume": "/resume.pdf",
+    "about": "About",
+    "about_items": {
+        "paragraph1" : "As a computer science student at the University of Western Ontario, I am quite passionate about technology and math. In each of my courses, I aim to achieve as high of a GPA as possible and seek to squeeze as much as possible out of my courses. My favourite courses so far have been Computer Architecture, Theory of Computation, and Machine Learning.",
+        "image1" : {
+            "src" : "westerncampus.jpg",
+            "caption" : "Western University Campus"
+        },
+        "paragraph2" : "In the field of computer science, I am captivated by a wide variety of topics. Since my first year, I have been working remotely as a web developer, where I have built and deployed a handful of websites and full-stack applications. This job has exposed me to many different front-end and back-end frameworks, and has taught me good development practices, collaboration, and IT skills. I am currently working with the 3DWestern team to develop a full-stack app to process 3D-printing orders. Aside from web development, I am becoming increasingly interested in cryptography. I have begun self-studying various fundamentals of cryptography, and am considering pursuing a Masters degree related to quantum cryptography.",
+        "image2" : {
+            "src" : "dataquest.jpg",
+            "caption" : "Working on a machine-learning model for Western's DataQuest hackathon"
+        },
+        "paragraph3" : "I am also an open-source software enthusiast. I run Arch Linux on my computer, GrapheneOS on my Pixel phone, and have my own physical Debian Linux server which I host this website on, along with various projects. In my free time I enjoy reading books and playing video games. My favourite genre of books to read are historical-biographical books; I am currently reading American Sphinx: The Character of Thomas Jefferson by Joseph Ellis. When I am stressed, I partake in hiking, archery, and going to the gym in order to decompress",
+        "image3" : {
+            "src" : "komoka.jpg",
+            "caption" : "Hiking Photo from Komoka Provincial Park"
+        }
+    }
   }
   

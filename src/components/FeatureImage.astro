@@ -1,0 +1,25 @@
+---
+const {src, caption} = Astro.props;
+---
+
+<div class="feature-image">
+    <img src={"src/assets/img/"+src}/>
+    <p>{caption}</p>
+</div>
+
+<style>
+    .feature-image {
+        color: white;
+        text-align: center;
+
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+        width: 50vh;
+    }
+
+    img {
+        border-radius: 1vh;
+    }
+</style>

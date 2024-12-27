@@ -10,6 +10,7 @@ import loginImage from '/src/assets/img/login.jpg'
 import content from '../../i18n/content.json';
 import Icon from '../icons/Icon.astro';
 import IconRow from '../icons/IconRow.astro';
+import FeatureImage from '../FeatureImage.astro';
 
 
 const { currentLocale } = Astro
@@ -65,6 +66,23 @@ const westernLogo = '/src/assets/img/westernlogo.svg';
 					</div>
 			 </article>
 			 
+			 <!-- About -->
+			 <article>
+				<div class="flex items-center my-4">
+					<div class="flex-grow border-t border-gray-300"></div>
+					<span class="px-4 text-3xl text-gray-700 dark:text-white">{content.about}</span>
+					<div class="flex-grow border-t border-gray-300"></div>
+				</div></br>
+				<div>
+					<p class="text-base font-normal text-gray-800 dark:text-gray-100">{content.about_items.paragraph1}</p></br>
+					<FeatureImage src={content.about_items.image1.src} caption={content.about_items.image1.caption}/></br>
+					<p class="text-base font-normal text-gray-800 dark:text-gray-100">{content.about_items.paragraph2}</p></br>
+					<FeatureImage src={content.about_items.image2.src} caption={content.about_items.image2.caption}/></br>
+					<p class="text-base font-normal text-gray-800 dark:text-gray-100">{content.about_items.paragraph3}</p></br>
+					<FeatureImage src={content.about_items.image3.src} caption={content.about_items.image3.caption}/>
+				</div>
+			</article>
+
 
 			 <!-- Experience -->
 			 <article>
