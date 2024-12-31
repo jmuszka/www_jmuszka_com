@@ -1,20 +1,18 @@
 ---
-const {name, caption, link} = Astro.props;
+const {name, caption, link, width, margin} = Astro.props;
 const url = link ? link : "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/" + name.toLowerCase() + "/" + name.toLowerCase() + "-original.svg";
 ---
 
 <style>
     .icon {
         text-align: center;
-        color: white;
-
-        width: 8vh;
+        /*width: 8vh;*/
         display: inline-block;
-        margin: 18px;
+        /*margin: 18px;*/
     }
 </style>
 
-<div class="icon">
+<div class="icon" style={"width:"+(width ? width : "8vh")+"; " + "margin: " + (margin ? margin : "18px") + ";"}>
     <img src={url}>
-    <p>{caption ? caption : name}</p>
+    <p class="text-gray-800 dark:text-gray-100" style={"display: " + (caption ? "inline-block" : "none")}>{caption ? caption : name}</p>
 </div>

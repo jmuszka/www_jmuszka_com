@@ -1,13 +1,31 @@
 {
     "intro": {
         "presentation": "Hi, I'm Josh 👋",
-        "job": "Computer science student",
-        "intro": " and avant developer. [what i currently do]"
+        "job": "Computer science major, ",
+        "intro": " software developer, and curious innovator"
     },
-    "experience": "Experience",
+    "experience": "Projects & Experience",
     "cards": {
-        "chess_card": "Design and development of a web application with MongoDB database for tournament and player queries. Main chess club of the city.",
+        "etymomap": "React web app to explore the etymology of the English language. Powered by OpenAI and Merriam-Webster.",
         "java_card": "Application for client and order management, with role assignment system using JPA with Hibernate, and MySQL relational database."
+    },
+    "jobs": {
+        "gruv": {
+            "organization": "Gruv Media",
+            "time": "July 2023 - Present",
+            "position": "Web Developer",
+            "bullet1": "Develop websites and web applications using React, Django, Wagtail, PHP, Wordpress, JavaScript, and Stripe.",
+            "bullet2": "Utilize and maintain server technologies including Apache, CPanel, PostgreSQL, fail2ban, ClamAV, Git + GitHub, Bash scripting, and more.",
+            "bullet3": "Communicate effectively with clients and management to ensure timely and exceptional project delivery.",
+            "bullet4": "Collaborate with fellow developers and IT to efficiently solve problems and devise optimal solutions and workflows."
+        },
+        "tdw": {
+            "organization": "3DWestern",
+            "time": "December 2024 - Present",
+            "position": "Full-stack Developer",
+            "bullet1": "Working with a team of follow Western students to build and deploy a web application to process 3D-printing orders.",
+            "bullet2": "Project is currently in the planning phase, and will involve a variety of technologies, including a frontend JavaScript framework, server backend, databases, and payment gateway API."
+        }
     },
     "education": "Education",
     "education_items": {
@@ -15,7 +33,7 @@
             "title": "BSc. Computer Science",
             "time": "September 2022 - April 2026",
             "university": "University of Western Ontario",
-            "major": "Honour's Specialization in Computer Science + Minor in Software Engineering",
+            "major": "Honours Specialization in Computer Science + Minor in Software Engineering",
             "courses": "Data Structures & Algorithms, Machine Learning, Artificial Intelligence, Object-Oriented Programming, Systems Programming, Operating Systems, Computer Architecture"
         },
         "certificate": {
@@ -54,11 +72,12 @@
             "src" : "dataquest.jpg",
             "caption" : "Working on a machine-learning model for Western's DataQuest hackathon"
         },
-        "paragraph3" : "I am also an open-source software enthusiast. I run Arch Linux on my computer, GrapheneOS on my Pixel phone, and have my own physical Debian Linux server which I host this website on, along with various projects. In my free time I enjoy reading books and playing video games. My favourite genre of books to read are historical-biographical books; I am currently reading American Sphinx: The Character of Thomas Jefferson by Joseph Ellis. When I am stressed, I partake in hiking, archery, and going to the gym in order to decompress",
+        "paragraph3" : "I am also an open-source software enthusiast. I run Arch Linux on my computer, GrapheneOS on my Pixel phone, and have my own physical Debian Linux server which I host this website on, along with various projects. In my free time I enjoy reading books and playing video games. My favourite genre of books to read are historical-biographical books; I am currently reading American Sphinx: The Character of Thomas Jefferson by Joseph Ellis. eWhen I am stressed, I partake in hiking, archery, and going to the gym in order to decompress",
         "image3" : {
             "src" : "komoka.jpg",
             "caption" : "Hiking Photo from Komoka Provincial Park"
         }
     }
+
   }
   

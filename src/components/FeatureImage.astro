@@ -4,12 +4,11 @@ const {src, caption} = Astro.props;
 
 <div class="feature-image">
     <img src={"src/assets/img/"+src}/>
-    <p>{caption}</p>
+    <p class="text-gray-800 dark:text-gray-100">{caption}</p>
 </div>
 
 <style>
     .feature-image {
-        color: white;
         text-align: center;
 
         display: block;
