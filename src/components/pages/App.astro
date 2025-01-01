@@ -1,24 +1,19 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Form from '../form.jsx';
-import Image from 'astro/components/Image.astro';
-//import myImage from '/src/assets/img/profile-photo-cut.jpg'
-import myImage from '/src/assets/img/hikeedit4.jpg'
-import etymoMapImage from '/src/assets/img/etymomapimage.png'
-import jPhotosImage from '/src/assets/img/jphotosimage.png'
-import retroPiImage from '/src/assets/img/retropiimage.png'
-import marioCalculatorImage from '/src/assets/img/mariocalculatorimage.jpg';
-import jWaveImage from '/src/assets/img/jwaveimage.avif';
-//import uwoImage from '/src/assets/img/westernlogo.svg'
 import content from '../../i18n/content.json';
 import Icon from '../icons/Icon.astro';
 import IconRow from '../icons/IconRow.astro';
 import FeatureImage from '../FeatureImage.astro';
 
 
-const { currentLocale } = Astro
-const westernLogo = '/src/assets/img/westernlogo.svg';
-
+import {Image} from 'astro:assets';
+import myImage from '/src/assets/img/hikeedit4.jpg'
+import etymoMapImage from '/src/assets/img/etymomapimage.png'
+import jPhotosImage from '/src/assets/img/jphotosimage.png'
+import retroPiImage from '/src/assets/img/retropiimage.png'
+import marioCalculatorImage from '/src/assets/img/mariocalculatorimage.jpg';
+import jWaveImage from '/src/assets/img/jwaveimage.avif';
 ---
 
 <Layout title="Josh Muszka — Home 👋">
@@ -275,7 +270,7 @@ const westernLogo = '/src/assets/img/westernlogo.svg';
 													<feDropShadow dx="0" dy="0" stdDeviation="1" flood-color="black" flood-opacity="1"/>
 													</filter>
 												</defs>
-												<image href={"/src/assets/img/gruvmedia.png"} width="90%" height="90%" filter="url(#outline-filter)"/>
+												<image href="gruvmedia.png" width="90%" height="90%" filter="url(#outline-filter)"/>
 	
 											</svg>
 										</a>
@@ -304,7 +299,7 @@ const westernLogo = '/src/assets/img/westernlogo.svg';
 												<feDropShadow dx="0" dy="0" stdDeviation="1" flood-color="black" flood-opacity="1"/>
 												</filter>
 											</defs>
-											<image href={"/src/assets/img/3dw.png"} width="90%" height="90%" filter="url(#outline-filter)"/>
+											<image href="3dw.png" width="90%" height="90%" filter="url(#outline-filter)"/>
 
 										</svg>
 									</a>
@@ -405,7 +400,7 @@ const westernLogo = '/src/assets/img/westernlogo.svg';
 												<feDropShadow dx="0" dy="0" stdDeviation="1" flood-color="black" flood-opacity="1"/>
 												</filter>
 											</defs>
-											<image href={westernLogo} width="90%" height="90%" filter="url(#outline-filter)"/>
+											<image href="westernlogo.svg" width="90%" height="90%" filter="url(#outline-filter)"/>
 
 										</svg>
 									</a>
