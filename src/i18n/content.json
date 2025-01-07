@@ -7,6 +7,10 @@
     "experience": "Projects & Experience",
     "cards": {
         "etymomap": "React web app to explore the etymology of the English language. Powered by OpenAI and Merriam-Webster.",
+        "jPhotos": "Full-stack, self-hosted, secure photo cloud-storage solution. Users can upload, view, and delete their personal photos.",
+        "retroPi": "Retro-gaming emulation interface where users can load and play a large library of games from a variety of platforms. Designed for Raspberry Pi.",
+        "marioCalculator": "Fully-functional Android calculator inspired by Super Mario Bros. (1985) for the NES.",
+        "jWave": "Mobile and web platform for users to download and stream music for free. Powered by Telegram API to interface with DeezLoaderBot.",
         "java_card": "Application for client and order management, with role assignment system using JPA with Hibernate, and MySQL relational database."
     },
     "jobs": {
