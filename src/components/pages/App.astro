@@ -14,6 +14,7 @@ import jPhotosImage from '/src/assets/img/jphotosimage.png'
 import retroPiImage from '/src/assets/img/retropiimage.png'
 import marioCalculatorImage from '/src/assets/img/mariocalculatorimage.jpg';
 import jWaveImage from '/src/assets/img/jwaveimage.avif';
+
 ---
 
 <Layout title="Josh Muszka — Home 👋">
@@ -27,7 +28,11 @@ import jWaveImage from '/src/assets/img/jwaveimage.avif';
 				<article class="md:flex-row-reverse md:justify-end md:gap-12">
 					<div class="flex flex-row justify-between sm:grid-cols-3">
 							<div class="col-span-2 flex flex-col justify-center gap-6 md:gap-8 my-auto">
-								<h1 class="text-5xl font-bold text-start dark:text-white">{content.intro.presentation}</h1> 
+								<h1 class="text-5xl font-bold text-start dark:text-white">{content.intro.presentation} 
+									<span class="wave">
+										👋
+									</span>
+								</h1> 
 								<h2 class="w-auto sm:w-[85%] md:w-[90%] leading-6 dark:text-white">
 									<span class="text-blue-600 dark:text-orange-500">{content.intro.job}</span> {content.intro.intro}
 								</h2> 
@@ -59,7 +64,7 @@ import jWaveImage from '/src/assets/img/jwaveimage.avif';
 								</div>
 							</div>
 							<div class="ml-auto hidden sm:block">
-								<Image class="rounded-full transition hover:scale-105" src={myImage} alt="" loading="eager"  format="jpg" />
+								<Image class=" animate-wave rounded-full transition hover:scale-105" src={myImage} alt="" loading="eager"  format="jpg" />
 							</div>
 					</div>
 			 </article>
