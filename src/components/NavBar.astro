@@ -11,17 +11,18 @@ import ThemeIcon from './theme/ThemeIcon.astro'
 <style>
   	.nav-bar{ /* Prepared to do simple animations based in keyframes in the nav */
 		
-		animation: enhance-header linear both;
+		/* animation: enhance-header linear both;
 		animation-timeline: scroll(root);
-		animation-range: 0 200px;
+		animation-range: 0 200px; */
+
+		mask: linear-gradient(black, black, transparent);
+		backdrop-filter: blur(5px);
 
 	}
 
 @keyframes enhance-header{
 	to{
 		backdrop-filter: blur(5px);
-
-		
 	}
 }
 </style>
