@@ -14,6 +14,15 @@
         "java_card": "Application for client and order management, with role assignment system using JPA with Hibernate, and MySQL relational database."
     },
     "jobs": {
+        "cssl": {
+            "organization": "Canadian Severe Storms Laboratory",
+            "time": "May 2025 - Present",
+            "position": "Software Engineering Research Intern",
+            "bullet1": "Led development efforts for the Northern Mesonet Project, a mesoscale environmental sensor network designed to improve severe weather forecasting and climate research capabilities across North America.",
+            "bullet2": "Architected and maintained scalable infrastructure for ingesting, storing, and visualizing high-frequency environmental data (e.g., temperature, humidity, wind speed) collected from remote IoT stations deployed across diverse and often inaccessible geographic regions.",
+            "bullet3": "Designed and implemented full-stack applications using C#, ASP.NET Core, React, and Remix, enabling real-time data visualization, station management, and user dashboards for researchers and meteorologists.",
+            "bullet4": "Built robust data pipelines utilizing InfluxDB for time-series data and PostgreSQL for relational storage, ensuring efficient data synchronization, validation, and long-term archival."
+        },
         "gruv": {
             "organization": "Gruv Media",
             "time": "July 2023 - Present",
@@ -76,7 +85,7 @@
             "src" : "dataquest.jpg",
             "caption" : "Working on a machine-learning model for Western's DataQuest hackathon"
         },
-        "paragraph3" : "I am also an open-source software enthusiast. I run Arch Linux on my computer, GrapheneOS on my Pixel phone, and have my own physical Debian Linux server which I host this website on, along with various projects. In my free time I enjoy reading books and playing video games. My favourite genre of books to read are historical-biographical books; I am currently reading American Sphinx: The Character of Thomas Jefferson by Joseph Ellis. eWhen I am stressed, I partake in hiking, archery, and going to the gym in order to decompress",
+        "paragraph3" : "I am also an open-source software enthusiast. I run Arch Linux on my computer, GrapheneOS on my Pixel phone, and have my own physical Debian Linux server which I host this website on, along with various projects. In my free time I enjoy reading books and playing video games. My favourite genre of books to read are historical-biographical books; I am currently reading American Prometheus: The Triumph and Trajedy of J. Robert Oppenheimer by Martin Sherwin and Kai Bird. When I am stressed, I partake in hiking, archery, and going to the gym in order to decompress.",
         "image3" : {
             "src" : "komoka.jpg",
             "caption" : "Hiking Photo from Komoka Provincial Park"
